@@ -1,0 +1,14 @@
+{
+  "name": "jazzari",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/amilajack/jazzari",
+  "author": "Amila Welihinda <amilajack@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "start": "http-server ."
+  }
+}
