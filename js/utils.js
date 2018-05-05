@@ -1,5 +1,5 @@
 function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function backingScale() {
@@ -9,13 +9,13 @@ function backingScale() {
 }
 
 function setupCanvas(canvas) {
-  var logicalWidth = parseInt(canvas.dataset.logicalWidth);
-  var logicalHeight = parseInt(canvas.dataset.logicalHeight);
+  const logicalWidth = parseInt(canvas.dataset.logicalWidth);
+  const logicalHeight = parseInt(canvas.dataset.logicalHeight);
 
   canvas.width = logicalWidth * backingScale();
   canvas.height = logicalHeight * backingScale();
 }
 
 function getQueryStringValue(key) {
-  return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+  return decodeURIComponent(window.location.search.replace(new RegExp(`^(?:.*[&\\?]${encodeURIComponent(key).replace(/[\.\+\*]/g, '\\$&')}(?:\\=([^&]*))?)?.*$`, 'i'), '$1'));
 }

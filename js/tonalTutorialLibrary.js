@@ -1,7 +1,8 @@
-var TONAL_TUTORIAL_LIBRARY = [
+const TONAL_TUTORIAL_LIBRARY = [
 
-{ name: "Tutorial 12: Play a major scale",
-  program:
+  {
+    name: 'Tutorial 12: Play a major scale',
+    program:
 `// Tutorial 12: Play a major scale
 
 var scale = [0,2,4,5,7,9,11]
@@ -29,11 +30,12 @@ function unrolled(i, scale) {
   return scale[i % scale.length] + offset
 }
 `
-},
+  },
 
 
-{ name: "Tutorial 13: Play a minor scale",
-  program:
+  {
+    name: 'Tutorial 13: Play a minor scale',
+    program:
 `// Tutorial 13: Play a minor
 
 var scale = [0,2,3,5,7,8,10]
@@ -61,11 +63,12 @@ function unrolled(i, scale) {
   return scale[i % scale.length] + offset
 }
 `
-},
+  },
 
 
-{ name: "Tutorial 14: Play a pentatonic scale",
-  program:
+  {
+    name: 'Tutorial 14: Play a pentatonic scale',
+    program:
 `// Tutorial 14: Play a pentatonic scale
 
 var scale = [0,3,5,7,10]
@@ -93,6 +96,6 @@ function unrolled(i, scale) {
   return scale[i % scale.length] + offset
 }
 `
-},
+  }
 
 ];

@@ -1,7 +1,8 @@
-var DRUM_LIBRARY = [
+const DRUM_LIBRARY = [
 
-{ name: "Tutorial 12: Create a simple beat",
-  program:
+  {
+    name: 'Tutorial 12: Create a simple beat',
+    program:
 `// Tutorial 12: Create a simple beat
 
 var kicks = [0, 1/4, 2/4, 3/4]
@@ -21,11 +22,12 @@ for (var i = 0; i < 4; i++) {
   }
 }
 `
-},
+  },
 
 
-{ name: "Idea Starter: Maddie Da Mouse",
-  program:
+  {
+    name: 'Idea Starter: Maddie Da Mouse',
+    program:
 `// Program: "Maddie Da Mouse"
 // Creates a simple drum beat which can be modified or
 // enhanced with your own flourishes.
@@ -84,8 +86,9 @@ measures.forEach(function(measure) {
   },
 
 
-{ name: "Idea Starter: There's a cat on my drumset",
-  program:
+  {
+    name: "Idea Starter: There's a cat on my drumset",
+    program:
 `// Program: "There's a cat on my drumset"
 // Randomly generates notes by moving forward in time by
 // some random amount, then creating a note on a randomly
@@ -130,11 +133,12 @@ function quantize(time, nearest) {
  return Math.round(time / nearest) * nearest;
 }
 `
-},
+  },
 
 
-{ name: "Idea Starter: Hammock-Driven-Drums",
-  program:
+  {
+    name: 'Idea Starter: Hammock-Driven-Drums',
+    program:
 `// Program: "Hammock Driven Drums"
 // Creates a simple drum beat which can be modified or
 // enhanced with your own flourishes.
@@ -178,11 +182,12 @@ measures.forEach(function(measure) {
 });
 
 `
-},
+  },
 
 
-{ name: "Idea Starter: Kiss my Rollerblades",
-  program:
+  {
+    name: 'Idea Starter: Kiss my Rollerblades',
+    program:
 `// Program: "Kiss my Rollerblades"
 // Creates a simple drum beat which can be modified or
 // enhanced with your own flourishes.
@@ -220,11 +225,12 @@ NOTE({time: 0, row: 12})
 NOTE({time: 3, row: 12})
 
 `
-},
+  },
 
 
-{ name: "Idea Starter: First Order Antelope",
-  program:
+  {
+    name: 'Idea Starter: First Order Antelope',
+    program:
 `// Program: "First Order Antelope"
 // Creates a simple drum beat which can be modified or
 // enhanced with your own flourishes.
@@ -251,11 +257,12 @@ measures.forEach(function(measure) {
 });
 
 `
-},
+  },
 
 
-{ name: "Idea Starter: Lilac Chance",
-  program:
+  {
+    name: 'Idea Starter: Lilac Chance',
+    program:
 `// Program: "Lilac Chance"
 // Creates a simple drum beat which can be modified or
 // enhanced with your own flourishes.
@@ -306,11 +313,12 @@ function quantize(time, nearest) {
  return Math.round(time / nearest) * nearest;
 }
 `
-},
+  },
 
 
-{ name: "Idea Starter: Dirty Laundry",
-  program:
+  {
+    name: 'Idea Starter: Dirty Laundry',
+    program:
 `// Program: "Dirty Laundry"
 // Creates a simple drum beat which can be modified or
 // enhanced with your own flourishes.
@@ -344,11 +352,12 @@ measures.forEach(function(measure) {
   }
 });
 `
-},
+  },
 
 
-{ name: "Idea Starter: Probable Cause",
-  program:
+  {
+    name: 'Idea Starter: Probable Cause',
+    program:
 `// Program: "Probable Cause"
 // Creates a random pattern based on tweakable probabilities
 // for each row of the pattern
@@ -393,11 +402,12 @@ function quantize(time, nearest) {
  return Math.round(time / nearest) * nearest;
 }
 `
-},
+  },
 
 
-{ name: "Idea Starter: Too-Loose La’Track",
-  program:
+  {
+    name: 'Idea Starter: Too-Loose La’Track',
+    program:
 `// Program: "Too-Loose La’Track"
 // Creates a simple drum beat which can be modified or
 // enhanced with your own flourishes.
@@ -432,11 +442,12 @@ measures.forEach(function(measure) {
 
 });
 `
-},
+  },
 
 
-{ name: "Idea Starter: Finite Impulse Responsibility",
-  program:
+  {
+    name: 'Idea Starter: Finite Impulse Responsibility',
+    program:
 `// Program: "Finite Impulse Responsibility"
 // Creates a simple drum beat which can be modified or
 // enhanced with your own flourishes.
@@ -466,11 +477,12 @@ measures.forEach(function(measure) {
   NOTE({time: 10/16 + measure, row: 4})
 });
 `
-},
+  },
 
 
-{ name: "Idea Starter: Funky Fractals",
-  program:
+  {
+    name: 'Idea Starter: Funky Fractals',
+    program:
 `// Program: "Funky Fractals"
 // Generates interesting symmetric pattern structures
 // using the technique of recursion.
@@ -517,11 +529,12 @@ function quantize(time, nearest) {
  return Math.round(time / nearest) * nearest;
 }
 `
-},
+  },
 
 
-{ name: "Idea Starter: Waltzing my ~",
-  program:
+  {
+    name: 'Idea Starter: Waltzing my ~',
+    program:
 `// Program: "Waltzing my ~"
 // Creates a simple drum beat which can be modified or
 // enhanced with your own flourishes.
@@ -548,11 +561,12 @@ measures.forEach(function(measure) {
 });
 
 `
-},
+  },
 
 
-{ name: "Idea Starter: Clavatronic",
-  program:
+  {
+    name: 'Idea Starter: Clavatronic',
+    program:
 `// Program: "Clavatronic"
 // Creates a simple drum beat which can be modified or
 // enhanced with your own flourishes.
@@ -571,8 +585,9 @@ clave(10, 2, 0.7);
 clave(10, 3, 0.6);
 `
   },
-//////////////////////////////////////////////////////////////////
-  { name: "Idea Starter: Partly Purdie",
+  // ////////////////////////////////////////////////////////////////
+  {
+    name: 'Idea Starter: Partly Purdie',
     program:
 `// Program: "Partly Purdy"
 // Creates a simple drum beat which can be modified or
@@ -601,11 +616,12 @@ for (var i = 0; i < 4; i++) {
  purdy(i);
 }
 `
-},
+  },
 
 
-{ name: "Idea Starter: Sinus Pain",
-  program:
+  {
+    name: 'Idea Starter: Sinus Pain',
+    program:
 `// Program: "Sinus Pain"
 // Draws a sequence of notes with their volumes
 // defined using the mathematical function Math.sin().
@@ -636,11 +652,12 @@ for (var i = 0; i < divisions; i++) {
 
 }
 `
-},
+  },
 
 
-{ name: "Idea Starter: Duh! Lay",
-  program:
+  {
+    name: 'Idea Starter: Duh! Lay',
+    program:
 `// Program: "Duh! Lay"
 // Creates notes that sound as if they're being delayed or
 // echoed by creating repetitions of the original note
@@ -680,5 +697,5 @@ for (var i = 0; i < 8; i++) {
       4) // falloff
 }
 `
-}
+  }
 ];

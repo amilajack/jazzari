@@ -1,6 +1,7 @@
-var KEYS_LIBRARY = [
-{ name: "Idea Starter: Dough Re Mi",
-  program:
+const KEYS_LIBRARY = [
+  {
+    name: 'Idea Starter: Dough Re Mi',
+    program:
 `// Program: "Dough Re Mi"
 // Generates the notes of a scale in ascending order.
 // Even programmer pianists have to practice their scales.
@@ -36,11 +37,12 @@ function unrolled(i, scale) {
 }
 
 `
-},
+  },
 
 
-{ name: "Idea Starter: Chords Chords Chords!",
-  program:
+  {
+    name: 'Idea Starter: Chords Chords Chords!',
+    program:
 `// Program: "Chords Chords Chords!"
 // Generates simple chord progressions
 
@@ -84,11 +86,12 @@ function unrolled(i, scale) {
   return scale[i % scale.length] + offset
 }
 `
-},
+  },
 
 
-{ name: "Idea Starter: Stairstep Chords",
-  program:
+  {
+    name: 'Idea Starter: Stairstep Chords',
+    program:
 `// Program: "Stairstep Chords"
 // Generates simple little ascending arpeggios.
 // This program is a variant of "Chords Chords Chords!"
@@ -154,11 +157,12 @@ function unrolled(i, scale) {
   return scale[i % scale.length] + offset
 }
 `
-},
+  },
 
 
-{ name: "Idea Starter: Randameloda",
-  program:
+  {
+    name: 'Idea Starter: Randameloda',
+    program:
 `// Program: "Randameloda"
 // Generates simple looping melodies in a given scale.
 // The melody is created by choosing some notes randomly
@@ -215,11 +219,12 @@ function unrolled(i, scale) {
   return scale[i % scale.length] + offset
 }
 `
-},
+  },
 
 
-{ name: "Idea Starter: The Jazzy Wanderer",
-  program:
+  {
+    name: 'Idea Starter: The Jazzy Wanderer',
+    program:
 `
 // Program: "The Jazzy Wanderer"
 // Generates simple wandering melodies in a given scale.
@@ -290,11 +295,12 @@ function quantize(time, nearest) {
  return Math.round(time / nearest) * nearest;
 }
 `
-},
+  },
 
 
-{ name: "Idea Starter: Dub Chords",
-  program:
+  {
+    name: 'Idea Starter: Dub Chords',
+    program:
 `// Program: "Dub Chords"
 // Generates chord progressions that sound as if they
 // are being echoed or delayed
@@ -375,11 +381,12 @@ function unrolled(i, scale) {
   return scale[i % scale.length] + offset
 }
 `
-},
+  },
 
 
-{ name: "Idea Starter: Interstellar Chit Chat",
-  program:
+  {
+    name: 'Idea Starter: Interstellar Chit Chat',
+    program:
 `// Program: "Interstellar Chit Chat"
 // Generates bleeps and bloops from another galaxy
 // However, all the bloops fall into a scale. Curious!
@@ -409,11 +416,12 @@ function unrolled(i, scale) {
   return scale[i % scale.length] + offset
 }
 `
-},
+  },
 
 
-{ name: "Idea Starter: The Snake Charmer",
-  program:
+  {
+    name: 'Idea Starter: The Snake Charmer',
+    program:
 `// Program: "The Snake Charmer"
 // Generates simple melodies by choosing the
 // "next" note in a scale. The "next" note
@@ -456,6 +464,6 @@ function unrolled(i, scale) {
   return scale[i % scale.length] + offset
 }
 `
-}
+  }
 
 ];
